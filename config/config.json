@@ -1,9 +1,10 @@
 {
   "development": {
-    "username": "root",
-    "password": "password",
-    "database": "infodb",
-    "host": "127.0.0.1",
+    "username": "gt6x9o3x1u2maf1n",
+    "password": "z3z39cyh0wxh0ad8",
+    "database": "sw6ralv382xvxv58",
+    "host": "wftuqljwesiffol6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "port": 3306,
     "dialect": "mysql",
     "operatorsAliases": false
   },
