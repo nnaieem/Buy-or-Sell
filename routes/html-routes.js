@@ -22,8 +22,8 @@ var PORT = process.env.PORT || 8080;
 var connection = mysql.createConnection({
   host: "us-cdbr-iron-east-04.cleardb.net",
   port: 3306,
-  user: "babd440acb72c2",
-  password: "83274d0d",
+  user: "root",
+  password: "password",
   database: "files"
 });
 
