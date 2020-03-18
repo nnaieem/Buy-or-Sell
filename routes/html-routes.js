@@ -19,30 +19,13 @@ var mysql = require("mysql")
 var PORT = process.env.PORT || 8080;
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
-// var connection = mysql.createConnection({
-//   host: "localhost",
-//   port: 3306,
-//   user: "root",
-//   password: "password",
-//   database: "files"
-// });
-
-var connection;
-if (process.env.JAWSDB_URL) {
-  // Database is JawsDB on Heroku
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-  // Database is local
-  connection = mysql.createConnection({
-    port: 3306,
-    host: 'localhost',
-    user: 'rgt6x9o3x1u2maf1n',
-    password: 'z3z39cyh0wxh0ad8',
-    database: 'files'
-  })
-};
-
-var mysql = require('mysql');
+var connection = mysql.createConnection({
+  host: "us-cdbr-iron-east-04.cleardb.net",
+  port: 3306,
+  user: "b1c03be2056f33",
+  password: "bf982fce",
+  database: "files"
+});
 
 // Initiate MySQL Connection.
 connection.connect(function(err) {
