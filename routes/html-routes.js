@@ -18,23 +18,24 @@ var mysql = require("mysql")
 // process.env.PORT lets the port be set by Heroku
 var PORT = process.env.PORT || 8080;
 
-// MySQL DB Connection Information (remember to change this with our specific credentials)
-var connection = mysql.createConnection({
-  host: "us-cdbr-iron-east-04.cleardb.net",
-  port: 3306,
-  user: "babd440acb72c2",
-  password: "83274d0d",
-  database: "files"
-});
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL)
+} else {
+  // MySQL DB Connection Information (remember to change this with our specific credentials)
+  var connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "password",
+    database: "files"
+  });
+};      
 
 // Initiate MySQL Connection.
-connection.connect(function(err) {
-    if (err) {
-      console.error("error connecting: " + err.stack);
-      return;
-    }
-    console.log("connected as id " + connection.threadId);
-  });
+connection.connect();
+
+module.exports = connection;
+
   
 users = []
 // FAROK link to database
