@@ -4,20 +4,19 @@
   "description": "",
   "main": "theServer.js",
   "scripts": {
-    "start": "node theServer.js",
     "devStart": "nodemon theServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nnaieem/Buy-or-Sell.git"
+    "url": "git+https://github.com/kmartinez92/Project_2.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nnaieem/Buy-or-Sell/issues"
+    "url": "https://github.com/kmartinez92/Project_2/issues"
   },
-  "homepage": "https://github.com/nnaieem/Buy-or-Sell#readme",
+  "homepage": "https://github.com/kmartinez92/Project_2#readme",
   "dependencies": {
     "bcrypt": "^4.0.0",
     "ejs": "^3.0.1",
