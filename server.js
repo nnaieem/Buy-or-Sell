@@ -21,7 +21,8 @@ app.use(express.static(__dirname + '/public'));
 
 require("./routes/html-routes.js")(app)
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+app.listen(PORT, function() {
+    // Log (server-side) when our server has started
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
 

@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kmartinez92/Project_2.git"
+    "url": "git+https://https://github.com/nnaieem/Buy-or-Sell.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kmartinez92/Project_2/issues"
+    "url": "https://https://github.com/nnaieem/Buy-or-Sell/issues"
   },
-  "homepage": "https://github.com/kmartinez92/Project_2#readme",
+  "homepage": "https://https://github.com/nnaieem/Buy-or-Sell#readme",
   "dependencies": {
     "bcrypt": "^4.0.0",
     "ejs": "^3.0.1",
